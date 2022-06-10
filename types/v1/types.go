@@ -198,3 +198,26 @@ type StorageResource struct {
 		} `json:"content"`
 	} `json:"entries"`
 }
+
+//LUN struct
+type LUN struct {
+	Base    string    `json:"@base"`
+	Updated time.Time `json:"updated"`
+	Links   []struct {
+		Rel  string `json:"rel"`
+		Href string `json:"href"`
+	} `json:"links"`
+	Entries []struct {
+		Base    string    `json:"@base"`
+		Updated time.Time `json:"updated"`
+		Links   []struct {
+			Rel  string `json:"rel"`
+			Href string `json:"href"`
+		} `json:"links"`
+		Content struct {
+			ID            string `json:"id"`
+			Name          string `json:"name"`
+			SizeTotal     uint64 `json:"sizeTotal"`
+		} `json:"content"`
+	} `json:"entries"`
+}
