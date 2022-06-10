@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	types "github.com/equelin/gounity/types/v1"
+	types "github.com/muravsky/gounity/types/v1"
 )
 
 //NewMetricRealTimeQuery purpose is to create a real time query.

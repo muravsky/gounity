@@ -1,6 +1,6 @@
 package gounity
 
-import types "github.com/equelin/gounity/types/v1"
+import types "github.com/muravsky/gounity/types/v1"
 
 //GetPool purpose is to get information about pool in the storage system. .
 func (session *Session) GetPool() (resp *types.Pool, err error) {

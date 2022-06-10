@@ -1,6 +1,6 @@
 package gounity
 
-import types "github.com/equelin/gounity/types/v1"
+import types "github.com/muravsky/gounity/types/v1"
 
 //GetbasicSystemInfo Provides access to system model, system name, software version, and API version information.
 func (session *Session) GetbasicSystemInfo() (resp *types.BasicSystemInfo, err error) {

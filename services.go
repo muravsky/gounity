@@ -1,6 +1,6 @@
 package gounity
 
-import types "github.com/equelin/gounity/types/v1"
+import types "github.com/muravsky/gounity/types/v1"
 
 //GetDNSServer purpose is to get the DNS configuration of the Unity array.
 func (session *Session) GetDNSServer() (resp *types.DNSServer, err error) {
