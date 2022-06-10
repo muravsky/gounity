@@ -19,3 +19,12 @@ func (session *Session) GetStorageResource() (resp *types.StorageResource, err e
 	err = session.Request("GET", "/api/types/storageResource/instances", fields, "", false, nil, &resp)
 	return resp, err
 }
+
+//GetLUN purpose is to get information about LUNs in the storage system.
+func (session *Session) GetLUN() (resp *types.LUN, err error) {
+
+	fields := "id,name,sizeTotal"
+
+	err = session.Request("GET", "/api/types/lun/instances", fields, "", false, nil, &resp)
+	return resp, err
+}
